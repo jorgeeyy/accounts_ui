@@ -1,0 +1,23 @@
+[
+  {
+    "logo": "spotify",
+    "title": "Spotify charged your card",
+    "date": "Oct 20, 2025",
+    "amount": "-$12.00",
+    "color": "#1ED760"
+  },
+  {
+    "logo": "netflix",
+    "title": "Netflix monthly subscription",
+    "date": "Oct 18, 2025",
+    "amount": "-$32.00",
+    "color": "#E50914"
+  },
+  {
+    "logo": "x",
+    "title": "X Charged your card",
+    "date": "Oct 15, 2025",
+    "amount": "-$80.50",
+    "color": "#000000"
+  }
+]

@@ -26,63 +26,71 @@ class Accounts extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Column(
-              children: [
-                ElevatedButton.icon(
-                  onPressed: () {},
-                  label: Icon(Icons.add, size: 30,),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.black,
-                    foregroundColor: Colors.white,
-                ),),
-                SizedBox(height: 10),
-                Text("Add Funds", style: TextStyle(fontWeight: FontWeight.bold),),
-              ],
+            Expanded(
+              child: Column(
+                children: [
+                  ElevatedButton.icon(
+                    onPressed: () {},
+                    label: Icon(Icons.add, size: 30,),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.black,
+                      foregroundColor: Colors.white,
+                  ),),
+                  SizedBox(height: 10),
+                  Text("Add Funds", style: TextStyle(fontWeight: FontWeight.bold),),
+                ],
+              ),
             ),
             SizedBox(width: 10),
-            Column(
-              children: [
-                ElevatedButton.icon(
-                  onPressed: () {},
-                  label: Icon(Icons.arrow_outward, size: 30,),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
+            Expanded(
+              child: Column(
+                children: [
+                  ElevatedButton.icon(
+                    onPressed: () {},
+                    label: Icon(Icons.arrow_outward, size: 30,),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      foregroundColor: Colors.black,
+                    ),
                   ),
-                ),
-                SizedBox(height: 10),
-                Text("Send", style: TextStyle(fontWeight: FontWeight.bold)),
-              ],
+                  SizedBox(height: 10),
+                  Text("Send", style: TextStyle(fontWeight: FontWeight.bold)),
+                ],
+              ),
             ),
             SizedBox(width: 10),
-            Column(
-              children: [
-                ElevatedButton.icon(
-                  onPressed: () {},
-                  label: Icon(Icons.call_received, size: 30,),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
+            Expanded(
+              child: Column(
+                children: [
+                  ElevatedButton.icon(
+                    onPressed: () {},
+                    label: Icon(Icons.call_received, size: 30,),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      foregroundColor: Colors.black,
+                    ),
                   ),
-                ),
-                SizedBox(height: 10),
-                Text("Withdraw", style: TextStyle(fontWeight: FontWeight.bold)),
-              ],
+                  SizedBox(height: 10),
+                  Text("Withdraw", style: TextStyle(fontWeight: FontWeight.bold)),
+                ],
+              ),
             ),
             SizedBox(width: 10),
-            Column(
-              children: [
-                ElevatedButton.icon(
-                  onPressed: () {},
-                  label: Icon(Icons.more_horiz, size: 30,),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
+            Expanded(
+              child: Column(
+                children: [
+                  ElevatedButton.icon(
+                    onPressed: () {},
+                    label: Icon(Icons.more_horiz, size: 30,),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      foregroundColor: Colors.black,
+                    ),
                   ),
-                ),
-                SizedBox(height: 10),
-                Text("More", style: TextStyle(fontWeight: FontWeight.bold)),
-              ],
+                  SizedBox(height: 10),
+                  Text("More", style: TextStyle(fontWeight: FontWeight.bold)),
+                ],
+              ),
             ),
             SizedBox(width: 10),
           ],

@@ -87,7 +87,7 @@ class _RecentTransactionsState extends State<RecentTransactions> {
                                       fontWeight: FontWeight.w500, fontSize: 18)),
                               Text(tx["date"],
                                   style: const TextStyle(
-                                      color: Colors.grey, fontSize: 12)),
+                                      color: Colors.grey, fontSize: 12, fontWeight: FontWeight.bold)),
                             ],
                           ),
                           Text(

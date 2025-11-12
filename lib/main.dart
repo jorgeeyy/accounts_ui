@@ -2,7 +2,7 @@ import 'package:accounts_ui/accounts.dart';
 import 'package:accounts_ui/active_cards.dart';
 import 'package:accounts_ui/recent_transactions.dart';
 import 'package:flutter/material.dart';
-import 'navicon.dart';
+import 'custom_bottom_navbar.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,8 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(fontFamily: 'EbGaramond'),
       title: 'Flutter Demo',
       home: Scaffold(
+        backgroundColor: Colors.white,
         body: SafeArea(
           child: Container(
             padding: EdgeInsets.all(10.0),
@@ -57,38 +59,39 @@ class MyApp extends StatelessWidget {
                   // thickness: 0.2,
                 ),
                 ActiveCards(),
-                SizedBox(height: 30),
+                SizedBox(height: 20),
                 RecentTransactions(),
                 SizedBox(height: 10),
-                Container(
-                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  margin: EdgeInsets.symmetric(horizontal: 25, vertical: 12),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(30),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.1),
-                        offset: Offset(0, 5),
-                        blurRadius: 15,
-                      ),
-                    ],
-                  ),
-                  width: double.infinity,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      NavIcon(icon: Icons.home_outlined, isActive: true),
-                      Icon(Icons.home_outlined),
-                      Icon(Icons.account_balance_wallet_outlined),
-                      Icon(Icons.person_2_outlined),
-                    ],
-                  ),
-                ),
+                // Container(
+                //   padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                //   margin: EdgeInsets.symmetric(horizontal: 25, vertical: 12),
+                //   decoration: BoxDecoration(
+                //     color: Colors.white,
+                //     borderRadius: BorderRadius.circular(30),
+                //     boxShadow: [
+                //       BoxShadow(
+                //         color: Colors.black.withValues(alpha: 0.1),
+                //         offset: Offset(0, 5),
+                //         blurRadius: 15,
+                //       ),
+                //     ],
+                //   ),
+                //   width: double.infinity,
+                //   child: Row(
+                //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //     children: [
+                //       NavIcon(icon: Icons.home_outlined, isActive: true),
+                //       Icon(Icons.home_outlined),
+                //       Icon(Icons.account_balance_wallet_outlined),
+                //       Icon(Icons.person_2_outlined),
+                //     ],
+                //   ),
+                // ),
               ],
             ),
           ),
         ),
+        bottomNavigationBar: CustomBottomNavBar(),
       ),
     );
   }

@@ -14,7 +14,7 @@ class NavIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = isActive ? Colors.black : Colors.red;
+    final color = isActive ? Colors.red : Colors.red;
 
     return Column(
       mainAxisSize: MainAxisSize.min,

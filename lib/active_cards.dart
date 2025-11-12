@@ -133,7 +133,7 @@ class ActiveCards extends StatelessWidget {
                               children: [
                                 Text("Holder Name", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                                 SizedBox(height: 8,),
-                                Text("**** **** **** *789", style: TextStyle(fontWeight: FontWeight.w600),)
+                                Text("**** **** **** *789", style: TextStyle(fontWeight: FontWeight.bold),)
                               ],
                             )
                           ],
